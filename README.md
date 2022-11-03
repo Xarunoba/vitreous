@@ -7,7 +7,7 @@ A simple way to start developing your next single-page application...
 </p>
 <p align='center'>Make more with less!</p>
 <p align='center'>
-  <a href="https://vitreous.xaru.win">Live demo (Hosted in an S3 Bucket)</a>
+  <a href="https://vitreous.xaru.win">Live demo (Hosted in a S3 Bucket)</a>
 </p>
 
 ## Features
