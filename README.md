@@ -6,7 +6,9 @@
 A simple way to start developing your next single-page application...
 </p>
 <p align='center'>Make more with less!</p>
-<p align='center'>[Live Demo (Hosted in an S3 Bucket)](https://vitreous.xaru.win)</p>
+<p align='center'>
+  <a href="https://vitreous.xaru.win">Live demo (Hosted in an S3 Bucket)</a>
+</p>
 
 ## Features
 - ✌️ [Vite 3](https://github.com/vitejs/vite) and [Vue 3](https://github.com/vuejs/core)
