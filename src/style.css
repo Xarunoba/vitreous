@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Courier New', 'DM Mono', monospace;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+}
+
+html {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.fade-enter-active,.fade-leave-active {
+  transition: opacity 0.7s ease;
+}
+.fade-enter-from,.fade-leave-to {
+  opacity: 0;
+}
+
+@layer components {
+  .text-effect {
+    @apply transition duration-700 ease-in-out capitalize cursor-default font-bold text-emerald-500 hover:text-cyan-500 animate-pulse;
+  }
+
+  a {
+    @apply font-medium transition duration-700 ease-in-out inline-block text-white/[.87] underline hover:text-cyan-500 hover:animate-pulse;
+  }
+
+  button {
+    font-family: inherit;
+    @apply font-medium text-base rounded-lg py-2.5 px-5 cursor-pointer transition duration-700 ease-in-out bg-transparent enabled:border-emerald-500 enabled:border-2 disabled:border-white/10 disabled:border-2 hover:enabled:text-cyan-500 hover:enabled:border-cyan-500 hover:enabled:outline-none hover:enabled:ring-cyan-500 hover:enabled:ring-2 focus:border-cyan-500 focus:outline-none focus:ring-cyan-500 focus:ring-2;
+  }
+
+  input {
+    @apply font-medium text-base transition duration-700 ease-in-out focus:text-cyan-500 placeholder:text-white/25 text-sm p-2 bg-transparent rounded-md mt-2 ml-2 border-2 border-emerald-500 focus:border-cyan-500 focus:outline-none focus:ring-cyan-500 focus:ring-1;
+  }
+}
