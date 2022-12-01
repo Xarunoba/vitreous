@@ -36,5 +36,10 @@ export default defineConfig({
     Icons({
       autoInstall: true,
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@/': `${path.resolve(__dirname, 'src')}/`
+    }
+  }
 })
