@@ -1,7 +1,12 @@
 <script setup>
+import { onMounted } from 'vue';
+
 const props = defineProps(['name'])
 const router = useRouter()
 
+onMounted(() => {
+    store.setName(props.name.toString().toLowerCase())
+})
 </script>
 
 <template>

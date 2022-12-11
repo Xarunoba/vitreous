@@ -8,7 +8,6 @@ const user = ref(store.getName())
 
 const go = () => {
     if (name.value) {
-        store.setName(name.value)
         router.push(`/u/${encodeURIComponent(name.value.toString().toLowerCase())}`)
     }
 }
