@@ -13,3 +13,10 @@ const router = createRouter({ history: createWebHistory(import.meta.env.BASE_URL
 app.use(pinia)
 app.use(router)
 app.mount('#app')
+
+// Redirect from 404 (Hacky redirect workaround due to hosting this in storj.io)
+if (sessionStorage.getItem('from_404') !== null) {
+    const path = sessionStorage.getItem('from_404')
+    sessionStorage.removeItem('from_404')
+    router.push(path)
+}
