@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { createPinia } from 'pinia'
 import { setupLayouts } from 'virtual:generated-layouts'
-import './style.css'
-import App from './App.vue'
+import '@/style.css'
+import App from '@/App.vue'
 import generatedRoutes from '~pages'
 
 const pinia = createPinia()

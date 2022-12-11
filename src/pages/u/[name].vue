@@ -1,8 +1,9 @@
 <script setup>
-import { onMounted } from 'vue';
-
+import { onMounted } from 'vue'
+import { useUserStore } from '@/store/user'
 const props = defineProps(['name'])
 const router = useRouter()
+const store = useUserStore()
 
 onMounted(() => {
     store.setName(props.name.toString().toLowerCase())
